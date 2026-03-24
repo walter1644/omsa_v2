@@ -1,0 +1,114 @@
+<!--ctrl + f: find and replace-->
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+  </head>
+  <body><!--aca dentro esta toda la pagina --> 
+    <div class="layout">
+      <div class="contenido">
+      <h2>Calculadora Omsa</h2>
+      <div class="input-group">
+        <label for="categoria">Ingrese su valor hora:</label><!--es la etiqueta del campo que tenga el id correspondiente -->
+        <input type="number" id="categoria" class="color"><!--type "number" quiere decir que solo acepta numeros -->
+      </div>
+
+      <div><!-- contenedor generico para cada input -->
+        <label for="antiguedad">Años en efectivo:</label>
+        <input type="number" id="antiguedad" class="color" step="0.01">
+      </div>
+
+      <div class="input-group">
+        <label for="horas_1">Horas 1° quincena:</label>
+        <input type="number" id="horas_1" class="color" step="0.01">
+      </div>
+
+      <div class="input-group">
+        <label for="quincena_1">Primer quincena neta:</label>
+        <input type="number" id="quincena_1" class="color" readonly>
+      </div>
+      <div>
+        <button onclick="operar_quincena_1()">1° quincena</button>
+      </div>
+
+      <div>
+        <label for="titulo">Valor titulo secundario</label>
+        <input type="number" id="titulo" class="color" step="0.01">
+      </div>
+
+      <div class="input-group">
+        <label for="horas_2">Horas 2° quincena:</label>
+        <input type="number" id="horas_2" class="color" step="0.01">
+      </div>
+
+      <div class="input-group">
+        <label for="quincena_2">Segunda quincena en neto</label>
+        <input type="number" id="quincena_2" class="color" readonly>
+      </div>
+      <div>
+        <button onclick="operar_quincena_2()">2° quincena</button>
+      </div>
+
+      <div class="input-group">
+        <label for="horas_mes">Total ambas quincenas:</label>
+        <input type="number" id="horas_mes" class="color" readonly>
+      </div>
+
+      <div>
+          <button onclick="calcular_total()">Horas mes</button>
+      </div>
+
+      <div class="input-group">
+        <label for="imgr">IMGR:</label>
+        <input type="number" class="color" id="imgr" readonly>
+      </div>
+
+      <div>
+        <button onclick="calcular_imgr()">IMGR</button>
+      </div>
+
+      <div class="input-group">
+        <label for="q2">Quincena 2 + IMGR:</label>
+        <input type="number" class="color" id="q2" readonly>
+      </div>
+
+      <div>
+        <button onclick="calcular_q2()">Quincena 2 + IMGR</button>
+      </div>
+          <a href="./uom.jpg" style="color: black;margin-left: 20px;">Convenio UOM</a>
+        </div>
+
+    <div class="panel-tabla">
+      <h2>CCT N° 260/75 — Rama Aluminio</h2>
+      <p class="subtitulo">Personal Jornalizado · Vigente desde 01/02/2025</p>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Categoría</th>
+            <th>Valor hora $</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>Ingresante</td>              <td>3.414,21</td></tr>
+          <tr><td>Operario Calificado</td>     <td>3.714,76</td></tr>
+          <tr><td>Medio Oficial</td>           <td>3.996,97</td></tr>
+          <tr><td>Operario Especializado</td>  <td>4.272,72</td></tr>
+          <tr><td>Operario Espls. Múltiple</td><td>4.626,70</td></tr>
+          <tr><td>Oficial</td>                 <td>4.716,43</td></tr>
+          <tr><td>Oficial CNC</td>             <td>5.094,23</td></tr>
+          <tr><td>Oficial Superior</td>        <td>5.094,23</td></tr>
+          <tr><td>Oficial Múltiple Superior</td><td>6.451,36</td></tr>
+        </tbody>
+      </table>
+
+      <p class="nota">IMGR: $ 809.268,00 &nbsp;·&nbsp; Seguro UOM: $ 6.579,24</p>
+      <p class="nota">Descuento retenciones: 19,5%</p>
+    </div>
+    </div>
+
+    <script src="calculadora.js"></script>
+  </body>
+</html>

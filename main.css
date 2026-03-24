@@ -1,0 +1,173 @@
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #b3afaf; /* Puedes usar cualquier color que prefieras */
+  /* O también puedes usar un gradiente: */
+  /* background: linear-gradient(to bottom, #3498db, #2c3e50); */
+  margin: 0; /* Elimina los márgenes predeterminados */
+  padding: 5px; /* Elimina el padding predeterminado */
+  /*DIVISION PARA EDITAR IMAGEN*/
+  background-image: url('./lex_tower.jpg');
+  background-size: cover; /* Para cubrir toda la pantalla */
+  background-repeat: no-repeat; /* Para evitar que se repita */
+  background-attachment: fixed; /* Para que el fondo sea fijo al hacer scroll */
+  }
+
+
+.contenido {
+  flex :1;
+  margin: 0; /* Centra el elemento horizontalmente */
+  padding: 20px;
+  text-align: center;
+  background-color: #d6d4d4;
+  color: rgb(0, 0, 0); /* Cambié a blanco para mejor contraste con fondo azul */
+  border-radius: 20px;
+}
+
+.container {
+  background-color: #f0f0f0;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  min-height: 100px; /* Cambiado de height fijo a mínimo */
+  width: 50%;
+  text-align: center;
+  margin: 20px auto; /* Añadí margen vertical */
+}
+
+
+.layout {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 20px;
+  padding: 20px;
+  width: 100%;        /* ← AGREGAR */
+  box-sizing: border-box; /* ← AGREGAR */
+}
+
+
+
+
+    
+    .input-group {
+      margin-bottom: 15px;/*se utiliza para establecer el espacio exterior (margen) debajo de un elemento.*/
+    }
+    
+    label {
+      display: block;
+      margin-bottom: 5px;
+      color: #000000;
+    }
+    /*El elemento <label> en HTML es muy útil para asociar una etiqueta de texto con un elemento
+      de formulario, como un <input>, <select>, o <textarea>.
+      Esto mejora la accesibilidad de tu formulario, ya que los usuarios pueden hacer
+      clic en la etiqueta para enfocar el campo correspondiente.
+    */
+    /*en CSS se utiliza para controlar cómo se presentan los elementos HTML en la página.
+    Esta propiedad determina si un elemento es tratado como un bloque, una línea, una lista,entre otros
+    */
+    input {
+      width: 100px;
+      padding: 8px;
+      border: 1px solid #000000;
+      border-radius: 4px;
+      margin-bottom: 10px;
+    }
+
+    input.color {
+      background-color:rgb(255, 255, 255);
+    }
+    .buttons {
+      display: flex; /* Cambiado a flex para que gap y flex-wrap funcionen */
+      gap: 10px;
+      border: 1px solid #000000;
+      margin-bottom: 30px; /* Solo un margin-bottom */
+      flex-wrap: wrap;
+      width: 120px; /* Ancho fijo */
+      padding: 10px; /* Añadido padding para espacio interior */
+    }
+    
+    button {
+      padding: 8px 16px;
+      background-color: rgb(12, 14, 175);
+      color: white;
+      border-radius: 4px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+      border: 1px solid #000000;
+      margin-bottom: 20px;
+    }
+    
+    button:hover {
+      background-color: #0056b3;
+    }
+
+      .panel-tabla {
+        flex: 1;
+        margin: 50 auto; /* Centra el elemento horizontalmente */
+        padding: 20px;
+        background-color: #d6d4d4;
+        border-radius: 20px;
+        font-family: Arial, sans-serif;
+        font-size: 0.82rem;
+        color: #000;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+      }
+
+      .panel-tabla h2 {
+        text-align: center;
+        font-size: 1rem;
+        margin-bottom: 4px;
+        color: #0c0eaf;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+      }
+
+      .panel-tabla .subtitulo {
+        text-align: center;
+        font-size: 0.72rem;
+        color: #555;
+        margin-bottom: 14px;
+      }
+
+      .panel-tabla table {
+        width: 100%;
+        border-collapse: collapse;
+      }
+
+      .panel-tabla th {
+        background-color: #0c0eaf;
+        color: #fff;
+        padding: 6px 8px;
+        text-align: left;
+        font-size: 0.75rem;
+      }
+
+      .panel-tabla th:last-child,
+      .panel-tabla td:last-child {
+        text-align: right;
+      }
+
+      .panel-tabla td {
+        padding: 5px 8px;
+        border-bottom: 1px solid #bbb;
+        font-size: 0.78rem;
+      }
+
+      .panel-tabla tr:nth-child(even) td {
+        background-color: #e8e7e7;
+      }
+
+      .panel-tabla tr:hover td {
+        background-color: #d0d4f5;
+        cursor: pointer;
+      }
+
+      .panel-tabla .nota {
+        margin-top: 10px;
+        font-size: 0.7rem;
+        color: #444;
+        text-align: center;
+      }
+
