@@ -31,7 +31,7 @@ function operar_quincena_2() {
     const antiguedad_bruta = porcentaje_anio * bruto_total;
     const bruto_q2 = antiguedad_bruta + bruto_total;
     const descuento = bruto_q2 * 0.195;
-    const seguro_uom = 6579.24;
+    const seguro_uom = 7367.81;
     const neto = Math.round((bruto_q2 - descuento - seguro_uom) * 100) / 100;
 
     window.bruto_2_quincena_2 = bruto_q2;
@@ -57,7 +57,7 @@ function calcular_total() {
 
 function calcular_imgr() {
   try {
-    const imgr_bruto = 1004438.00;
+    const imgr_bruto = 1036390.00;
     const imgr_descuento = imgr_bruto * 0.195;
     const imgr_total = imgr_bruto - imgr_descuento;
     const imgr = imgr_total - window.neto_total;
